@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .errorlist {color: yellow; display: block}
+    </style>
+</head>
+<body>
+
+  <form action="{% url 'search_car' %}" method="post"
+        enctype="multipart/form-data">
+
+        {{ form.as_p }}
+
+      <input type="submit"/>
+
+
+
+  </form>
+</body>
+</html>

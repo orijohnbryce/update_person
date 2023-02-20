@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>הוספת מכונית</title>
+</head>
+<body>
+    <form action="{% url 'add_car' cid=cid  %}" method="post">
+
+        {{ form.as_p }}
+
+        <input name="cid" type="hidden" value={{ cid }} />
+
+        <input type="submit"/>
+    </form>
+</body>
+</html>

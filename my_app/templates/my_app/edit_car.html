@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>עריכת פרטי רכב</title>
+</head>
+<body>
+  <form action="{% url 'edit_car' cid=cid %}" method="post">
+    {{ form.as_p }}
+    <input type="submit"/>
+
+  </form>
+</body>
+</html>

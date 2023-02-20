@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cars list</title>
+</head>
+<body>
+  {%  for car in cars %}
+    <a href="{% url 'edit_car' cid=car.id %}">
+        {{car.car_type}}
+    </a>
+  <br/>
+  {% endfor %}
+</body>
+</html>
